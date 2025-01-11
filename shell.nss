@@ -34,15 +34,9 @@ import 'imports/develop.nss'
 import 'imports/goto.nss'
 import 'imports/taskbar.nss'
 
+//Power Menu also with custom icons ~Dvojo
+import 'imports/powermenu.nss'
+
 remove(find='AMD Software: Adrenalin Edition') //disable sys. placed AMD Adrenalin App
 item(title='Adrenalin Software' cmd='C:\Program Files\AMD\CNext\CNext\RadeonSoftware.exe' image) //AMD Adrenalin App
 item(title='NVIDIA' cmd='C:\Program Files\NVIDIA Corporation\NVIDIA App\CEF\nvidia app.exe' image) //NVIDIA App
-
-menu(mode='multiple' title='Power Options' position='bottom' image=icon.power_menu)
-{
-	item(title='Shutdown' cmd='shutdown.exe' args='/s' image=icon.power_shutdown)
-	item(title='Restart' cmd='shutdown.exe' args='/r' image=icon.power_restart)
-	item(title='Sleep' cmd='shutdown.exe' args='/h' image=icon.power_sleep)
-	separator
-	item(title='Logout' cmd='shutdown.exe' args='/l' image=icon.power_logout)
-}
