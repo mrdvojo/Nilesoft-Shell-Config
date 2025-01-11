@@ -27,9 +27,9 @@
 
 menu(mode='multiple' title='Power Options' position='bottom' image=icon.power_menu)
 {
-	item(title='Shutdown' cmd='shutdown.exe' args='/s' image=icon.power_shutdown) //Shuts down machine
-	item(title='Restart' cmd='shutdown.exe' args='/r' image=icon.power_restart) //Restarts machine
-	item(title='Sleep' cmd='shutdown.exe' args='/h' image=icon.power_sleep) //Hibernates machine (when hibernation turned off, puts machine to sleep)
+	item(title='Shutdown' cmd='shutdown.exe' args='/s /t 0' image=icon.power_shutdown) //Shuts down machine
+	item(title='Restart' cmd='shutdown.exe' args='/r /t 0' image=icon.power_restart) //Restarts machine
+	//item(title='Sleep' cmd='' args='' image=icon.power_sleep) //Puts machine to sleep ~disabled for now
 	separator
-	item(title='Logout' cmd='shutdown.exe' args='/l' image=icon.power_logout) //Logs-out user
+	item(title='Logout' cmd='shutdown.exe' args='/l /t 0' image=icon.power_logout) //Logs-out user
 }
