@@ -28,15 +28,27 @@ menu(mode="multiple" title=title.more_options image=icon.more_options)
 {
 }
 
-import 'imports/terminal.nss'
-import 'imports/file-manage.nss'
+//Turned-Off vanilla Terminal options ~Dvojo
+//import 'imports/terminal.nss'
+
+// Turned-Off vanilla File Manage options ~Dvojo
+//import 'imports/file-manage.nss'
+
+//Turned-Off vanilla Go To options ~Dvojo
+//import 'imports/goto.nss'
+
 import 'imports/develop.nss'
-import 'imports/goto.nss'
 import 'imports/taskbar.nss'
 
-//Power Menu also with custom icons ~Dvojo
-import 'imports/powermenu.nss'
+//Edited and Merged File Manage, Go To menus ~Dvojo
+import 'imports/manage_menu.nss'
 
-remove(find='AMD Software: Adrenalin Edition') //disable sys. placed AMD Adrenalin App
-item(title='Adrenalin Software' cmd='C:\Program Files\AMD\CNext\CNext\RadeonSoftware.exe' image) //AMD Adrenalin App
-item(title='NVIDIA' cmd='C:\Program Files\NVIDIA Corporation\NVIDIA App\CEF\nvidia app.exe' image) //NVIDIA App
+//Custom Terminal App Menu ~Dvojo
+import 'imports/terminal_menu.nss'
+
+//Power Menu also with custom icons ~Dvojo
+import 'imports/power_menu.nss'
+
+remove(find='AMD Software: Adrenalin Edition') //disable sys. placed AMD Adrenalin App ~Dvojo
+item(title='Adrenalin Software' cmd='C:\Program Files\AMD\CNext\CNext\RadeonSoftware.exe' image) //AMD Adrenalin App ~Dvojo
+item(title='NVIDIA' cmd='C:\Program Files\NVIDIA Corporation\NVIDIA App\CEF\nvidia app.exe' image) //NVIDIA App ~Dvojo
